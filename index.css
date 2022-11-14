@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Moderne;
+    src: url(./Moderne-Sans-Font/Moderne\ Sans\ Font.ttf);
+  }
+
+body {
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    margin-top: 2vh;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+.navigation {
+    display: flex;
+    height: 5vh;
+    width: 100%;
+    align-items:center;
+    justify-content:center;
+}
+
+.icon {
+    margin: 5vw;
+}
+
+.main {
+    height:92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(88, 92, 99);
+    text-transform: uppercase;
+    font-family: Moderne;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+}
+
+img {
+    width: 96vw;
+    height: 50vh;
+    border-radius: 12px;
+}
+
+.name h1 {
+    text-align: center;
+}
