@@ -10,6 +10,25 @@ body {
     font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
+a {
+    text-decoration: none;
+    --fa-text-decoration:none;
+}
+
+nav a:link {
+    color:black;
+}
+
+/* anchor tags which are being pressed/clicked */
+nav a:active {
+    color: black;
+}
+
+/* anchor tags which have an href which exists in the browser's history */
+nav a:visited {
+    color: black;
+}
+
 .navigation {
     display: flex;
     height: 5vh;
@@ -46,14 +65,20 @@ img {
 }
 
 .aboutnav {
-        display: flex;
-        align-items:center;
-        justify-content:space-around;
-        height: 5vh;
-        width: 90%;
-        margin-top: 5vh;
-        margin-left: auto;
-        margin-right: auto;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    height: 5vh;
+    width: 90%;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    position: sticky;
+    top: 1.2rem;
+    z-index: 999;
+    box-shadow: 10 3px 15px rgb(0 0 0 / 0.2);
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6) !important;  /* Chrome 10-25, Safari 5.1-6 */
+
 }
 
 .about {
@@ -62,8 +87,14 @@ img {
     align-items: center;
     flex-direction: column;
     flex: 2;
+    max-width: 80%;
     height: calc(100vh - 10vh);
-    margin: auto;
+    margin: 1rem auto;
+    z-index: 1;
+}
+
+.aboutpara {
+    text-align: justify;
 }
 
 
