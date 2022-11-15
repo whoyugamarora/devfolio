@@ -23,9 +23,9 @@ body {
 }
 
 .main {
-    height:92vh;
+    height:94vh;
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
     align-items: center;
     flex-direction: column;
     color: rgb(88, 92, 99);
@@ -37,10 +37,21 @@ body {
 
 img {
     width: 96vw;
-    height: 50vh;
+    height: 48vh;
     border-radius: 12px;
 }
 
 .name h1 {
     text-align: center;
 }
+
+.aboutnav {
+        display: flex;
+        align-items:center;
+        justify-content:space-around;
+        height: 5vh;
+        width: 70%;
+        margin: auto;
+}
+
+
