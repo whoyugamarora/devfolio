@@ -68,16 +68,15 @@ img {
     display: flex;
     align-items:center;
     justify-content:space-around;
-    height: 5vh;
+    height: 9vh;
     width: 90%;
-    margin-top: 5vh;
     margin-left: auto;
     margin-right: auto;
     position: sticky;
-    top: 1.2rem;
+    top: 0;
     z-index: 999;
-    box-shadow: 10 3px 15px rgb(0 0 0 / 0.2);
-    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6) !important;  /* Chrome 10-25, Safari 5.1-6 */
+    box-shadow: 1 3px 15px rgb(0 0 0 / 0.2);
+    background-color: #ECE9E6;
 
 }
 
@@ -88,7 +87,7 @@ img {
     flex-direction: column;
     flex: 2;
     max-width: 80%;
-    height: calc(100vh - 10vh);
+    height: calc(100vh - 9vh);
     margin: 1rem auto;
     z-index: 1;
 }
