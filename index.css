@@ -10,11 +10,6 @@ body {
     font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
-a {
-    text-decoration: none;
-    --fa-text-decoration:none;
-}
-
 nav a:link {
     color:black;
 }
@@ -42,7 +37,7 @@ nav a:visited {
 }
 
 .main {
-    height:94vh;
+    height:95vh;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -64,12 +59,16 @@ img {
     text-align: center;
 }
 
+.name p {
+    font-size: 0.9rem;
+}
+
 .aboutnav {
     display: flex;
     align-items:center;
     justify-content:space-around;
     height: 9vh;
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     position: sticky;
@@ -92,8 +91,41 @@ img {
     z-index: 1;
 }
 
+#yugam {
+    text-decoration-line: underline;
+    text-decoration-color: rgba(216,180,254,.6);
+}
+
 .aboutpara {
     text-align: justify;
 }
 
+.technologies {
+    height: 91vh;
+    padding: 2vh;
+    max-width: 80%;
+    margin: auto;
+    text-align: justify;
+}
 
+.myskills {
+    font-size: 2rem;
+    font-weight: lighter;
+    height: 11vh;
+    padding-top: 2rem;
+}
+
+.skillspara {
+    text-align: justify;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.techicons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    justify-items: center;
+    align-items:center;
+    height:30vh;
+}
