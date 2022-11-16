@@ -3,19 +3,27 @@
     src: url(./Moderne-Sans-Font/Moderne\ Sans\ Font.ttf);
   }
 
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 body {
     background: #121212; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #000000, #434343); /* Chrome 10-25, Safari 5.1-6 */
     margin-top: 2vh;
     font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    overflow-x: hidden;
     color: white;
 }
 
 #toggleimg {
     position: fixed;
     top: 90vh;
-    right: 3.5vw;
+    right: 8vw;
     opacity: 0.6;
     cursor: pointer;
 }
@@ -58,7 +66,7 @@ nav a:visited {
 .main {
     height:95vh;
     display: flex;
-    justify-content:safe;
+    justify-content:center;
     align-items: center;
     flex-direction: column;
     color: wheat;
@@ -66,7 +74,6 @@ nav a:visited {
     font-family: Moderne;
     letter-spacing: 0.1rem;
     font-size: 1.1rem;
-    margin-top:10vh;
 }
 
 img {
