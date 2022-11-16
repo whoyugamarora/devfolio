@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url(./index.css);
-    </style>
+    <link rel="stylesheet"  id="pagestyle" type="text/css" href="./index.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/d98220f3bc.js" crossorigin="anonymous"></script>
     <title>Yugam Arora</title>
@@ -18,12 +16,11 @@
     <section class="wrapper">
 
         <nav class="navigation" data-aos="fade-right" data-aos-duration="2000">
-            <a href="https://github.com/whoyugamarora"><i class="fa-brands fa-github icon fa-lg"></i></a>
-            <a href="https://www.linkedin.com/in/yugam-arora-653a241a7/"><i
-                    class="fa-brands fa-linkedin icon fa-lg"></i></a>
-            <a href="./files/Resume - Coop.pdf"><i class="fa-solid fa-code icon fa-lg"></i></a>
-            <a href="https://www.instagram.com/whoyugamarora/"><i class="fa-brands fa-instagram icon fa-lg"></i></a>
-            <a href="mailto: arorayugam85@yahoo.com"><i class="fa-solid fa-envelope icon fa-lg"></i></a>
+            <a href="https://github.com/whoyugamarora"><i id="icon" class="fa-brands fa-github icon fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/yugam-arora-653a241a7/"><i id="icon" class="fa-brands fa-linkedin icon fa-lg"></i></a>
+            <a href="./files/Resume - Coop.pdf"><i id="icon" class="fa-solid fa-code icon fa-lg"></i></a>
+            <a href="https://www.instagram.com/whoyugamarora/"><i id="icon" class="fa-brands fa-instagram icon fa-lg"></i></a>
+            <a href="mailto: arorayugam85@yahoo.com"><i id="icon" class="fa-solid fa-envelope icon fa-lg"></i></a>
         </nav>
 
         <section class="main">
@@ -47,14 +44,14 @@
 
         <section class="about" data-aos="zoom-out-right" data-aos-duration="1200">
 
-            <p class="myskills">nice to see you, I'm <span id="yugam">yugam!</span></p>
+            <p class="myskills" ata-aos="zoom-in-down">nice to see you, I'm <span id="yugam">yugam!</span></p>
 
-            <div class="aboutpara">
+            <div class="aboutpara" data-aos="zoom-in-up">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium at sequi laudantium possimus
                     voluptates saepe consectetur! Earum, dicta soluta itaque nisi eligendi molestias accusantium iste
                     modi. Ad ducimus laudantium obcaecati!</p>
             </div>
-            <div class="aboutpara">
+            <div class="aboutpara" data-aos="zoom-in-up">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat quae, praesentium quod ab
                     distinctio eum dolor, ad amet eos ut ipsum aliquam officia perferendis consequuntur cum? Quos
                     aliquam maxime facere!</p>
@@ -63,10 +60,10 @@
 
         <hr>
 
-        <section class="technologies">
-            <p class="myskills">my skills</p>
-            <p class="skillspara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, fugit quam quos sequi dolor, doloremque odio totam facilis perferendis labore maxime repellendus aliquid? Perferendis soluta, officia consequuntur doloribus est nisi.</p>
-            <p class="techicons">
+        <section class="technologies" >
+            <p class="myskills" data-aos="fade-right">my skills</p>
+            <p class="skillspara" data-aos="fade-up-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, fugit quam quos sequi dolor, doloremque odio totam facilis perferendis labore maxime repellendus aliquid? Perferendis soluta, officia consequuntur doloribus est nisi.</p>
+            <p class="techicons" data-aos="fade-left">
                 <i class="fa-brands fa-html5 fa-3x"></i>
                 <i class="fa-brands fa-css3-alt fa-3x"></i>
                 <i class="fa-brands fa-js fa-3x"></i>
@@ -80,10 +77,13 @@
             <p class="empty"></p>
         </section>
 
-
+        <p id="toggleimg">
+            <i id="darkmode1" class="fa-solid fa-toggle-off fa-xl"></i>
+        </p>
 
     </section>
-
+    
+    <script type="text/javascript" src="index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
