@@ -29,17 +29,18 @@ const socialicons = document.getElementById('social-icons');
 const hammenu = document.getElementById("hammenu");
 
 const menu = () => {
-    if (socialicons.style.display === 'none' && hammenu.classList.contains('fa-bars')) {
+    if (hammenu.classList.contains('fa-bars')) {
         socialicons.style.display = 'flex';
         hammenu.classList.remove('fa-bars');
         hammenu.classList.add('fa-xmark');
-        socialicons.style.transform = 'translateX(0)';
+        socialicons.classList.add('showMenu');      
         
     } else {
         socialicons.style.display = 'none';
         hammenu.classList.remove('fa-xmark');
         hammenu.classList.add('fa-bars');
-        socialicons.style.transition = "all 2s";
-        hammenu.style.transition = "all 2s";
+        socialicons.classList.remove('showMenu');      
     }
 };
+
+hamburger.addEventListener('click', menu);
