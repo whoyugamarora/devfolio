@@ -34,7 +34,7 @@ a:active {
     height: 5vh;
     width: 100%;
     align-items:center;
-    justify-content:space-around;
+    justify-content:center;
 }
 
 #hamburger {
@@ -43,20 +43,19 @@ a:active {
 
 
 #sun {
+    margin-inline: 2rem;
     cursor: pointer;
     transition: all 0.2s;
 }
 
 .socialicons {
-    transform: translateX(-150%);
-    transition: transform 2s;
+    display: flex;
 }
 
 .showMenu {
     transform: translateX(0);
     transition: transform 2s;
 }
-
 
 
 .icon {
@@ -190,3 +189,59 @@ img {
     opacity: 1;
     transition: all 0.8s;
 }
+
+
+
+
+.workexperience {
+    min-height: 91vh;
+    padding: 2vh;
+    max-width: 80%;
+    margin: auto;
+    text-align: justify;
+}
+
+.timeline {
+  display: flex;
+  justify-content: center;
+}
+
+.outer {
+    border-left: 1px solid #333;
+}
+
+.card {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 1rem;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    max-width: 400px;
+  }
+
+  .info {
+    display: grid;
+    gap: 10px;
+  }
+
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 999px;
+    left: -28px;
+    border: 2.5px solid black;
+  }
+
+  .company, .time {
+    font-size: 0.9rem ;
+    line-height: 0.7rem;
+    font-weight: 600;
+  }
+
+  .workdescription {
+    font-size: 0.95rem;
+  }

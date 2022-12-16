@@ -22,25 +22,3 @@ togglebutton.addEventListener('click', () => {
     }
 
 });
-
-
-const hamburger = document.getElementById('hamburger');
-const socialicons = document.getElementById('social-icons');
-const hammenu = document.getElementById("hammenu");
-
-const menu = () => {
-    if (hammenu.classList.contains('fa-bars')) {
-        socialicons.style.display = 'flex';
-        hammenu.classList.remove('fa-bars');
-        hammenu.classList.add('fa-xmark');
-        socialicons.classList.add('showMenu');      
-        
-    } else {
-        socialicons.style.display = 'none';
-        hammenu.classList.remove('fa-xmark');
-        hammenu.classList.add('fa-bars');
-        socialicons.classList.remove('showMenu');      
-    }
-};
-
-hamburger.addEventListener('click', menu);
