@@ -205,19 +205,21 @@ img {
 .workexperience {
     min-height: 91vh;
     padding: 2vh;
-    max-width: 80%;
-    margin: auto;
+    max-width: 90%;
     text-align: justify;
 }
 
 .timeline {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .outer {
     border-left: 1px solid #333;
-    width: 80vw;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
@@ -227,7 +229,7 @@ img {
     background: white;
     color: black;
     border-radius: 15px;
-    width: 70vw;
+    max-width: 100%;
   }
 
   .info {
