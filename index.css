@@ -63,7 +63,7 @@ a:active {
 /* Main Page with Image */
 
 .main {
-    height:95vh;
+    height:94vh;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -73,12 +73,18 @@ a:active {
     font-family: Moderne;
     letter-spacing: 0.1rem;
     font-size: 1.1rem;
+    margin: auto;
 }
 
-img {
-    width: 96vw;
-    height: 48vh;
-    border-radius: 12px;
+#mainimg {
+    width: 55vw;
+    height: 55vw;
+    position: relative;
+    border-radius:30% 70% 47% 53% / 30% 30% 70% 70%  ;
+}
+
+.name {
+    margin-top: 2vh ;
 }
 
 .name h1 {
