@@ -182,7 +182,7 @@ a:active {
     grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
     justify-items: center;
     align-items:center;
-    height:40vh;
+    height:30vh;
 }
 
 
@@ -272,4 +272,44 @@ a:active {
 
 footer {
     text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+    
+.main {
+    height: 93vh;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+#mainimg {
+    width: 35vw;
+    height: 35vw;
+    position: relative;
+    border-radius:30% 70% 47% 53% / 30% 30% 70% 70%  ;
+}
+
+.skillsdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+
+.skillspara {
+    width: 30%;
+}
+
+.techicons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items:center;
+    height: 30vh;
+    width: 60%;
+    place-items: center;
+}
+
+
 }
