@@ -37,7 +37,7 @@ a:active {
     height: 5vh;
     width: 100%;
     align-items:center;
-    justify-content:center;
+    justify-content:space-evenly;
 }
 
 #sun {
@@ -45,6 +45,7 @@ a:active {
     cursor: pointer;
     transition: all 0.2s;
 }
+
 
 .socialicons {
     display: flex;
@@ -197,7 +198,6 @@ a:active {
 }
 
 
-
 .projectdesc {
     text-align: center;
     display: grid;
@@ -213,6 +213,15 @@ a:active {
     padding: 2vh;
     max-width: 90%;
     text-align: left;
+    margin: auto;
+}
+
+.workexperiencetitle {
+    font-size: 2rem;
+    font-weight: lighter;
+    height: 11vh;
+    padding-top: 2rem;
+    padding-left: 1.3rem;
 }
 
 .timeline {
@@ -277,6 +286,11 @@ footer {
 
 @media screen and (min-width: 768px) {
     
+
+.navigation {
+    justify-content: space-evenly;
+}
+
 .main {
     height: 93vh;
     flex-direction: row-reverse;
@@ -309,6 +323,18 @@ footer {
     height: 30vh;
     width: 60%;
     place-items: center;
+}
+
+
+}
+
+@media screen and (min-width: 768px) {
+
+#mainimg {
+    width: 25vw;
+    height: 25vw;
+    position: relative;
+    border-radius:30% 70% 47% 53% / 30% 30% 70% 70%  ;
 }
 
 
