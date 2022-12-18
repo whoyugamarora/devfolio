@@ -78,6 +78,10 @@ a:active {
     margin: auto;
 }
 
+.blob {
+   
+}
+
 #mainimg {
     width: 55vw;
     height: 55vw;
@@ -191,6 +195,50 @@ a:active {
     height:30vh;
 }
 
+.fa-html5:hover {
+    color:#E44D26;
+    transition: 0.3s;
+}
+
+.fa-css3-alt:hover {
+    color:#264de4;
+    transition: 0.3s;
+}
+
+.fa-js:hover {
+    color:#f0db4f;
+    transition: 0.3s;
+}
+
+.fa-node:hover {
+    color:#215732;
+    transition: 0.3s;
+}
+
+.fa-bootstrap:hover {
+    color:#563d7c;
+    transition: 0.3s;
+}
+
+.fa-java:hover {
+    color:#5382a1;
+    transition: 0.3s;
+}
+
+.fa-linux:hover {
+    color: gray;
+    transition: 0.3s;
+}
+
+.fa-square-git:hover {
+    color: #F1502F;
+    transition: 0.3s;
+}
+
+.fa-react:hover {
+    color: #61DBFB;
+    transition: 0.3s;
+}
 
 /* Projects Section (Coming Soon part) */
 
@@ -262,6 +310,8 @@ a:active {
   }
 
   .title {
+    font-size: 1.15rem;
+    font-weight: bold;
     color: #ccd6f6;
   }
 
