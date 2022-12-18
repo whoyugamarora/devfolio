@@ -10,7 +10,7 @@
     <meta name="keywords" content="Yugam Arora, Yugam, Arora, UFV, HTML, CSS, JavaScript">
     <meta name="author" content="Yugam Arora">
     <link rel="icon" type="image/x-icon" href="./pictures/favicon.png">
-    <link rel="stylesheet" type="text/css" href="./index.css" id="pagestyle" />
+    <link rel="stylesheet" type="text/css" href="./darkindex.css" id="pagestyle" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/d98220f3bc.js" crossorigin="anonymous"></script>
     <title>Yugam Arora</title>
@@ -20,7 +20,7 @@
 
     <div class="wrapper">
 
-        <nav class="navigation" data-aos="fade-down" data-aos-duration="1000">
+        <nav class="navigation" id="navigation" data-aos="fade-down" data-aos-duration="1000">
             <div id="social-icons" class="socialicons">
                 <a href="https://github.com/whoyugamarora" aria-label="GitHub" target="_blank"><i
                         class="fa-brands fa-github icon fa-lg"></i></a>
@@ -28,7 +28,7 @@
                         class="fa-brands fa-linkedin icon fa-lg"></i></a>
                 <a href="./files/Resume - Coop.pdf" aria-label="Resume" target="_blank"><i
                         class="fa-solid fa-code icon fa-lg"></i></a>
-                <a href="mailto: arorayugam85@yahoo.com" aria-label="Mail" target="_blank"><i
+                <a href="mailto:arorayugam85@yahoo.com" aria-label="Mail" target="_blank"><i
                         class="fa-solid fa-envelope icon fa-lg"></i></a>
             </div>
             <div id="sun">
@@ -36,9 +36,9 @@
             </div>
         </nav>
 
-        <section class="main" data-aos="fade-down" data-aos-duration="1000">
+        <section class="main" id="main" data-aos="fade-down" data-aos-duration="1000">
             <div class="heading">
-                <div class="blob"><img id="mainimg" src="./pictures/yugam1.webp" alt="Yugam Arora"></div>
+                <div class="blob"><img id="mainimg" src="./pictures/yugam1.webp" alt="Yugam Arora" draggable="false"></div>
             </div>
             <div class="name">
                 <h1>Yugam Arora</h1>
@@ -46,35 +46,42 @@
             </div>
         </section>
 
-        <hr>
 
-        <nav class="aboutnav">
-            <p><a href="#about">about</a></p>
-            <p><a href="#skills">skills</a></p>
-            <p><a href="#projects">projects</a></p>
-            <p><a href="#workexperience">work</a></p>
+        <nav class="aboutnav" id="aboutnav">
+            <div class="logoyugam">
+                <a href="#navigation"><img src="./pictures/favicon.png" id="imglogo" alt="Yugam Arora logo"></a>
+            </div>
+            <div class="largenav">
+                <p><a href="#aboveaboutline">about</a></p>
+                <p><a href="#aboveskillsline">skills</a></p>
+                <p><a href="#aboveprojectline">projects</a></p>
+                <p><a href="#workexperiencetitle">work</a></p>
+            </div>
         </nav>
+
+        <hr id="aboveaboutline">
+        <br><br>
 
         <section class="about" id="about" data-aos="fade-up" data-aos-duration="1000">
 
-            <p class="myskills">nice to see you, I'm <span id="yugam">yugam!</span></p>
+            <p class="myskills" id="aboutheading">nice to see you, I'm <span id="yugam">yugam!</span></p>
 
             <div class="aboutpara">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium at sequi laudantium possimus
                     voluptates saepe consectetur! Earum, dicta soluta itaque nisi eligendi molestias accusantium iste
                     modi. Ad ducimus laudantium obcaecati!</p>
-            </div>
-            <div class="aboutpara">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat quae, praesentium quod ab
                     distinctio eum dolor, ad amet eos ut ipsum aliquam officia perferendis consequuntur cum? Quos
                     aliquam maxime facere!</p>
             </div>
+
         </section>
 
-        <hr>
+        <hr id="aboveskillsline">
+        <br><br>
 
         <section class="technologies" id="skills" data-aos="fade-down" data-aos-duration="1000">
-            <p class="myskills">my skills</p>
+            <p class="myskills" id="myskills">my skills</p>
             <div class="skillsdiv">
                 <p class="skillspara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, fugit quam
                     quos
@@ -98,19 +105,19 @@
             <br>
         </section>
 
-        <hr>
+        <hr id="aboveprojectline">
+        <br><br>
 
-        <section class="projects" id="projects" data-aos="fade-up" data-aos-duration="1000">
-            <p class="myskills">projects</p>
+        <section class="projects" id="projects" data-aos="fade-down" data-aos-duration="1000">
+            <p class="myskills" id="projectsheading">projects</p>
             <div class="projectdescription">
                 <p class="projectdesc">Coming Soon</p>
             </div>
         </section>
 
-        <hr>
 
         <section class="workexperience" id="workexperience" data-aos="fade-down" data-aos-duration="1000">
-            <p class="workexperiencetitle">work experience</p>
+            <p class="workexperiencetitle" id="workexperiencetitle">work experience</p>
             <div class="timeline">
                 <div class="outer">
 
@@ -157,14 +164,13 @@
                     </div>
                 </div>
             </div>
-    </div>
+        </section>
+        <br>
 
-    <br>
 
-
-    <footer>
-        <p>Made with &hearts; by <span id="footername">Yugam Arora</span></p>
-    </footer>
+        <footer>
+            <p>Made with <i class="fa-solid fa-heart"></i> by <span id="footername">Yugam Arora</span></p>
+        </footer>
 
     </div>
 
