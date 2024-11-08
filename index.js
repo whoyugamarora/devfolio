@@ -9,13 +9,13 @@ togglebutton.addEventListener('click', () => {
 
         toggleicon.classList.remove('fa-moon');
         toggleicon.classList.add('fa-sun');
-        styleswap.setAttribute("href", './index.css');
+        styleswap.setAttribute("href", './darkindex.css');
         homepic.setAttribute("src", './pictures/personatdesk.svg');
     
     } else {
         toggleicon.classList.remove('fa-sun');
         toggleicon.classList.add('fa-moon');
-        styleswap.setAttribute("href", './darkindex.css');
+        styleswap.setAttribute("href", './index.css');
         homepic.setAttribute("src", './pictures/personatdeskdark.svg');   
     }
 
