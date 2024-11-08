@@ -438,6 +438,7 @@ footer {
     height: 30vh;
     width: 60%;
     place-items: center;
+    gap: 2vw;
 }
 
 
