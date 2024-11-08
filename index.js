@@ -5,20 +5,18 @@ const homepic = document.getElementById("homepic");
 
 togglebutton.addEventListener('click', () => {
 
-    if (toggleicon.classList.contains('fa-sun')) {
-
-        toggleicon.classList.remove('fa-sun');
-        toggleicon.classList.add('fa-moon');
-        styleswap.setAttribute("href", './index.css');
-        homepic.setAttribute("src", './pictures/personatdeskdark.svg');
-
-    } else {
+    if (toggleicon.classList.contains('fa-moon')) {
 
         toggleicon.classList.remove('fa-moon');
         toggleicon.classList.add('fa-sun');
-
-        styleswap.setAttribute("href", './darkindex.css');
+        styleswap.setAttribute("href", './index.css');
         homepic.setAttribute("src", './pictures/personatdesk.svg');
+    
+    } else {
+        toggleicon.classList.remove('fa-sun');
+        toggleicon.classList.add('fa-moon');
+        styleswap.setAttribute("href", './darkindex.css');
+        homepic.setAttribute("src", './pictures/personatdeskdark.svg');   
     }
 
 });
