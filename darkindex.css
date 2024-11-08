@@ -231,6 +231,7 @@ a:active {
     justify-items: center;
     align-items:center;
     height:30vh;
+    gap: 2vw;
 }
 
 .fa-html5:hover {
@@ -264,7 +265,7 @@ a:active {
 }
 
 .fa-linux:hover {
-    color: gray;
+    color:  rgb(165, 165, 13);
     transition: 0.3s;
 }
 
@@ -275,6 +276,21 @@ a:active {
 
 .fa-react:hover {
     color: #61DBFB;
+    transition: 0.3s;
+}
+
+.fa-microsoft:hover {
+    color:#1DA1F2;
+    transition: 0.3s;
+}
+
+.fa-network-wired:hover {
+    color:rgb(139, 64, 29);
+    transition: 0.3s;
+}
+
+.fa-aws:hover {
+    color: #F1502F;
     transition: 0.3s;
 }
 
