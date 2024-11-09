@@ -399,6 +399,9 @@ footer {
     color:rgba(119, 12, 234, 0.988);
 }
 
+
+/* Only for Screen Size greater than 768 Px (Tablets and Above) */
+
 @media screen and (min-width: 768px) {
     
 
