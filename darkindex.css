@@ -208,6 +208,7 @@ a:active {
     padding: 0;
     max-width: 80%;
     margin: auto;
+    margin-bottom: 5vh;
     text-align: justify;
 }
 
@@ -293,6 +294,7 @@ a:active {
     color: #F1502F;
     transition: 0.3s;
 }
+
 
 /* Projects Section (Coming Soon part) */
 
