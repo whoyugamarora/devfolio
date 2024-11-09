@@ -203,7 +203,7 @@ a:active {
     padding: 2vh;
     max-width: 80%;
     margin: auto;
-    margin-bottom: 5vh;
+    margin-bottom: 10%;
     text-align: justify;
 }
 
@@ -443,6 +443,10 @@ footer {
     width: 60%;
     place-items: center;
     gap: 2vw;
+}
+
+.technologies {
+    margin-bottom: 0%;
 }
 
 
