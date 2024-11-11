@@ -128,12 +128,14 @@ a:active {
     align-items:center;
     justify-content:space-around;
     height: 9vh;
-    width: 100%;
-    margin-inline:auto;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
     position: sticky;
     top: 0;
-    z-index: 999;
-    box-shadow: 0px 3px 21px -8px rgba(0,0,0,0.75);
+    z-index: 200;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* A subtle shadow on the bottom */
     background-color: #ECE9E6;
     border-bottom: 1px solid #FFFFFF;
 }
@@ -181,7 +183,7 @@ a:active {
     flex-direction: column;
     flex: 2;
     max-width: 80%;
-    height: calc(100vh - 9vh);
+    height: 90vh;
     margin: 1rem auto;
     z-index: 1;
 }
@@ -454,18 +456,42 @@ footer {
 
 @media screen and (min-width: 1024px) {
 
+.navigation {
+    display: flex;
+    flex-direction: column; /* Change to row to align items horizontally */
+    justify-content: space-evenly; /* Pushes icons and sun icon to opposite ends */
+    align-items: center; /* Aligns items vertically within the navigation bar */
+    width: 7vw;
+    height: auto;
+    position: fixed;
+    row-gap: 40px;
+    top:12vh;
+    right: 0;
+}
+    
+.socialicons {
+    display: flex;
+    flex-direction: column; /* Align icons in a row */
+    row-gap: 40px; /* Add space between icons if needed */
+}
+    
+#sun {
+    margin-inline:auto; /* Pushes sun icon to the far right within the navigation bar */
+}
+
+
 .main {
+    height: 100vh;
     font-size: 1.3rem;
 }
 
-
-.socialicons {
-    width: 80%;
+.aboutnav {
+    top:0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
-#sun {
-    margin-inline: auto;
-}
 
 .about {
     display: flex;
@@ -504,7 +530,7 @@ footer {
     display: block;
     width: 85px;
     height: 80px;
-    
+    scroll-behavior: smooth;
 } 
 
 }

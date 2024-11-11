@@ -125,15 +125,15 @@ a:active {
 .aboutnav {
     display: flex;
     align-items:center;
-    flex-direction: row;
     justify-content:space-around;
-    height: 10vh;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    height: 9vh;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 200;
     background-color: #0a192f;
     color: #ccd6f6;
     box-shadow: 0px 5px 41px -14px rgba(0,0,0,0.75);
@@ -204,11 +204,11 @@ a:active {
 
 
 .technologies {
-    height: calc(99vh - 10vh);
-    padding: 0;
+    height: 91vh;
+    padding: 2vh;
     max-width: 80%;
     margin: auto;
-    margin-bottom: 5vh;
+    margin-bottom: 10%;
     text-align: justify;
 }
 
@@ -216,6 +216,7 @@ a:active {
     font-size: 2rem;
     font-weight: lighter;
     height: 11vh;
+    padding-top: 2rem;
     color: #ccd6f6;
 }
 
@@ -299,7 +300,8 @@ a:active {
 /* Projects Section (Coming Soon part) */
 
 .projects {
-    min-height: calc(100vh - 10vh);
+    min-height: 91vh;
+    padding: 2vh;
     max-width: 80%;
     margin: auto;
     text-align: justify;
@@ -317,8 +319,9 @@ a:active {
 /* Work Experience Section (experience part) */
 
 .workexperience {
-    min-height: calc(100vh - 10vh);
+    min-height: 91vh;
     max-width: 90%;
+    padding: 2vh;
     text-align: left;
     margin: auto;
 }
@@ -327,8 +330,9 @@ a:active {
     font-size: 2rem;
     font-weight: lighter;
     height: 11vh;
-
     color: #ccd6f6;
+    padding-top: 2rem;
+    padding-left: 1.3rem;
 }
 
 .timeline {
@@ -443,36 +447,55 @@ footer {
     height: 30vh;
     width: 60%;
     place-items: center;
+    gap: 2vw;
+}
+
+.technologies {
+    margin-bottom: 0%;
 }
 
 
 }
 
-@media screen and (min-width: 768px) {
 
-#mainimg {
-    width: 25vw;
-    height: 25vw;
-    position: relative;
-    border-radius:30% 70% 47% 53% / 30% 30% 70% 70%  ;
-}
-
-
-}
 
 @media screen and (min-width: 1024px) {
+.navigation {
+    display: flex;
+    flex-direction: column; /* Change to row to align items horizontally */
+    justify-content: space-evenly; /* Pushes icons and sun icon to opposite ends */
+    align-items: center; /* Aligns items vertically within the navigation bar */
+    width: 7vw;
+    height: auto;
+    position: fixed;
+    row-gap: 40px;
+    top:12vh;
+    right: 0;
+}
+    
+.socialicons {
+    display: flex;
+    flex-direction: column; /* Align icons in a row */
+    row-gap: 40px; /* Add space between icons if needed */
+}
+    
+#sun {
+    margin-inline:auto; /* Pushes sun icon to the far right within the navigation bar */
+}
+
 
 .main {
+    height: 100vh;
     font-size: 1.3rem;
 }
 
-.socialicons {
-    width: 80%;
+.aboutnav {
+    top:0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
-#sun {
-    margin-inline: auto;
-}
 
 .about {
     display: flex;
@@ -511,7 +534,7 @@ footer {
     display: block;
     width: 85px;
     height: 80px;
-    
+    scroll-behavior: smooth;
 } 
 
 }
