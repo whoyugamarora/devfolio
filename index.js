@@ -20,3 +20,16 @@ togglebutton.addEventListener('click', () => {
     }
 
 });
+
+window.addEventListener("load", () => {
+    // Scroll to the top after a small delay
+    setTimeout(() => {
+        window.scrollTo(0, 0);
+    }, 10);
+
+    // If there is a hash, reload the page without the hash
+    if (window.location.hash) {
+        const cleanURL = window.location.origin + window.location.pathname;
+        window.history.replaceState(null, null, cleanURL); // Updates URL without reloading
+    }
+});

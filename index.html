@@ -186,7 +186,11 @@
     <script src="index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        once: false, // Allows animations to re-trigger
+        mirror: true // Re-triggers animations when scrolling back up
+    });
     </script>
 </body>
 
