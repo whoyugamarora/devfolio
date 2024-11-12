@@ -370,9 +370,9 @@ a:active {
 .projectcard {
     height: 60vh;  
     width: 70vw;
-    border: 1px solid #333;
     border-radius: 10px;
     background-color: #112240;
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     scroll-snap-align: start;
     text-align: center;
@@ -464,7 +464,7 @@ a:active {
 }
 
 .company, .time {
-    font-size: 1rem ;
+    font-size: 0.95rem ;
     line-height: 0.9rem;
     font-weight: 600;
 }
@@ -475,11 +475,12 @@ a:active {
 
 .workdescription ul {
     padding: 0;
-    margin: 0;
 }
 
 .workdescription li {
     line-height: 1.6;
+    margin-left: -20px;
+    padding: 0;
 
 }
 
