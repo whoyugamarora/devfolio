@@ -401,7 +401,7 @@ a:active {
     font-weight: lighter;
     height: 11vh;
     padding-top: 2rem;
-    padding-left: 1.3rem;
+    padding-left: 1.5rem;
 }
 
 .timeline {
@@ -412,7 +412,7 @@ a:active {
 
 .outer {
     border-left: 1px solid #333;
-    width: 80vw;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -452,13 +452,23 @@ a:active {
   }
 
   .company, .time {
-    font-size: 0.9rem ;
+    font-size: 1rem ;
     line-height: 0.9rem;
     font-weight: 600;
   }
 
-  .workdescription {
-    font-size: 0.95rem;
+.workdescription {
+    font-size: 0.9rem;
+  }
+
+  .workdescription ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .workdescription li {
+    line-height: 1.6;
+
   }
 
 
@@ -527,6 +537,14 @@ footer {
 
 .projectcard {
     width: 50vw;
+}
+
+.workexperience {
+    min-height: 91vh;
+    padding: 2vh;
+    max-width: 80%;
+    text-align: left;
+    margin: auto;
 }
 
 
@@ -617,6 +635,11 @@ footer {
     height: 70vh;
 }
 
+
+.workexperiencetitle {
+    padding-left: 0;
+}
+
 }
 
 
@@ -626,6 +649,72 @@ footer {
     width: 25vw;
     height: 70vh;
 }
-    
+
+.workexperience {
+    min-height: 91vh;
+    padding: 2vh;
+    max-width: 90%;
+    text-align: left;
+    margin: auto;
+}
+
+.workexperiencetitle {
+    font-size: 2rem;
+    font-weight: lighter;
+    height: 11vh;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+}
+
+.timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer {
+    border-left: 1px solid #333;
+    width: 1200px; /* Fixed width */
+    max-width: 1200px; /* Prevents stretching beyond 600px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 1.5rem;
+    background: white;
+    color: black;
+    border-radius: 15px;
+    width: 90%;
+  }
+
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 999px;
+    left: -52px;
+    border: 2.5px solid black;
+  }
+
+  .workdescription {
+    font-size: 0.9rem;
+  }
+
+  .workdescription ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .workdescription li {
+    line-height: 1.6;
+  }
     
 }
